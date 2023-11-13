@@ -1,0 +1,14 @@
+# RPI Alarm Clock Roadmap
+- [ ] Find an existing similar repository
+- [ ] Get hardware
+    - [ ] Raspberry Pi
+    - [ ] Speaker
+    - [ ] DC Power
+    - [ ] Screen
+- [ ] Find Python libraries for controlling Raspberry Pi hardware
+- [ ] Connect Raspberry Pi to Wifi
+- [ ] Connect Hardware
+- [ ] Write code:
+    - [ ] Display Time on Screen
+    - [ ] Play Audio over speaker
+    - [ ] Play Audio over speaker at given time
