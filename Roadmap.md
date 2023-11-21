@@ -1,10 +1,10 @@
 # RPI Alarm Clock Roadmap
-- [ ] Find an existing similar repository
-- [ ] Get hardware
-    - [ ] Raspberry Pi
-    - [ ] Speaker
-    - [ ] DC Power
-    - [ ] Screen
+- [x] Find an existing similar repository
+- [x] Get hardware
+    - [x] Raspberry Pi
+    - [x] Speaker
+    - [x] DC Power
+    - [x] Screen
 - [ ] Find Python libraries for controlling Raspberry Pi hardware
 - [ ] Connect Raspberry Pi to Wifi
 - [ ] Connect Hardware
