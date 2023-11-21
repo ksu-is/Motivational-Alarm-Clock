@@ -5,10 +5,13 @@
     - [x] Speaker
     - [x] DC Power
     - [x] Screen
-- [ ] Find Python libraries for controlling Raspberry Pi hardware
-- [ ] Connect Raspberry Pi to Wifi
-- [ ] Connect Hardware
-- [ ] Write code:
-    - [ ] Display Time on Screen
-    - [ ] Play Audio over speaker
-    - [ ] Play Audio over speaker at given time
+- [x] Find Python libraries for controlling Raspberry Pi hardware
+- [x] Connect Raspberry Pi to Wifi
+- [x] Connect Hardware
+- [x] Write code:
+    - [x] Display Time on Screen
+    - [x] Play Audio over speaker
+    - [x] Play Audio over speaker at given time
+    - [x] Add color picker for background
+    - [x] Add ability to select alarm sound
+    - [x] Display motivational quotes
