@@ -1,6 +1,7 @@
 import time
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
+import pygame
 
 def set_alarm_time():
     root = tk.Tk()
@@ -43,7 +44,50 @@ def set_alarm_sound():
     file_path = filedialog.askopenfilename(title="Select Alarm Sound File", filetypes=[("Sound files", ".wav;.mp3")])
 
     return file_path
+def play_alarm_sound(alarm_sound):
+    pygame.mixer.init()
+    sound = pygame.mixer.Sound(alarm_sound)
+    sound.play()
+
+def motivational_message():
+    messages = [
+        "Rise and shine! A new day awaits.",
+        "You've got this! Time to conquer the day.",
+        "Today is full of possibilities. Make it count!",
+        "Wake up with determination. Go to bed with satisfaction.",
+    ]
+    return messages
+
+def show_message(message):
+    root = tk.Tk()
+    root.withdraw()
+    messagebox.showinfo("Motivational Alarm", message)
+
+def main():
+    print("Motivational Alarm Clock")
+
+    alarm_time = set_alarm_time()
+    print("Alarm set for:", alarm_time)
+
+    alarm_sound = set_alarm_sound()
+    print("Alarm sound set:", alarm_sound)
+
+    while True:
+        current_time = time.strftime("%H:%M")
+        print("Current Time:", current_time)
+
+        if current_time == alarm_time:
+            print("Time to wake up!")
+            play_alarm_sound(alarm_sound)
+
+            for message in motivational_message():
+                show_message(message)
+                time.sleep(2)
+
+            break
+
+        time.sleep(60)
 
 if __name__ == "__main__":
-    set_alarm_time()
-    set_alarm_sound()
+    main()
+   
