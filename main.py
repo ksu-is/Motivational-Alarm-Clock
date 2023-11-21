@@ -1,5 +1,6 @@
 import time
 import tkinter as tk
+from tkinter import filedialog
 
 def set_alarm_time():
     root = tk.Tk()
@@ -35,5 +36,14 @@ def set_alarm_time():
 
     return alarm_time_var.get()
 
-if __name__ == "main":
+def set_alarm_sound():
+    root = tk.Tk()
+    root.withdraw()
+
+    file_path = filedialog.askopenfilename(title="Select Alarm Sound File", filetypes=[("Sound files", ".wav;.mp3")])
+
+    return file_path
+
+if __name__ == "__main__":
     set_alarm_time()
+    set_alarm_sound()
